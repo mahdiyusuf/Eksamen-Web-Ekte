@@ -11,7 +11,7 @@
     color: black;
 }
 body{
-    background-image: url('biblitek.jpeg');
+    background-image: url('../Bilder/biblitek.jpeg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: bottom 80%;
@@ -35,13 +35,13 @@ h2{
     justify-content: center;
 }
 
-.navigasjon{
+nav{
     display: block;
     background-color: rgb(0, 0, 0);
     z-index: 5;
-    width: 100%;
+    width: 102%;
 }
-.navigasjon, li a{
+li, a{
     margin-left: 30px;
     margin-right: 30px;
     display:block;
