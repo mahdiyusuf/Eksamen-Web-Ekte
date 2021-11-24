@@ -1,0 +1,127 @@
+@media only screen and (max-width: 460px) { 
+    body{
+        background-image: none;
+        background-color: black;
+    }
+ }
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+.title{
+    margin: 0px auto;
+    margin-top: 300px;
+    display:grid;
+    justify-content: center;
+    font-size: 50px;
+    color: #ffe600;
+    filter: drop-shadow(1rem 1rem 1rem rgb(43, 43, 43));
+}
+body{
+    background-image: url('biblitek.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-position: bottom 80%;
+    color: rgb(46, 46, 46);
+    margin: 0;
+    overflow-x: hidden;
+}
+header{
+    width: 101%;
+    margin-left: -40px;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+}
+h1{
+    font-weight: bold;
+}
+
+.navigasjon{
+    display: block;
+    background-color: rgb(0, 0, 0);
+    z-index: 5;
+    width: 100%;
+}
+.navigasjon, li a{
+    margin-left: 30px;
+    margin-right: 30px;
+    display:block;
+    padding: 0.5em;
+    padding-left: 1em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: transform .2s;
+}
+
+#logo{
+    width: 70px;
+    height: 40px;
+}
+
+li a:hover {
+    transform: scale(1.5);
+  }
+
+
+ul{
+    list-style-type: none;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 26px;
+    margin-left: 100px;
+  }
+
+.bilde{
+    display: grid;
+    height: 240px;
+    width: 400px;
+    border-radius: 10%;
+    border: 2px solid white;
+}
+
+.bildetekst{
+    display: grid;
+    max-width: 65ch;
+    border-radius: 10%;
+    padding: 10px;
+    line-height: 150%;
+    color: white;
+    text-align: center;
+}
+
+.flex-container{
+    background-color: rgba(0,0,0,0.8);
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-area:auto;
+    place-items: center, top;
+    margin-top: 440px;
+    padding: 100px;
+}
+
+
+.footer{
+    display: grid;
+    flex-wrap: wrap;
+    justify-items:center;
+    color: white;
+    background: black;
+    opacity: 100%;
+    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: -10px;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 460px) and (max-width: 900px){
+    .title{
+        font-size: 20px;
+    }
+   
+}
