@@ -148,12 +148,12 @@ p{
 }
 #elev{
     margin-top: 40px;
-    margin-left: 5%;
     display: grid;
     width: 400px;
     height: 250px;
     border: 2px solid;
     border-radius: 10px;
+    align-items: center;
 }
 
 .menu{
@@ -177,11 +177,14 @@ p{
        display: grid;
        grid-template-columns: 50% 50%;
     }
-
+  
     .bilde{
         width: 100%;
         margin:0px auto;
     }   
+    #elev{
+        margin-left: 7%;
+    }
    
     ul{
         display: inline-flex;
@@ -202,6 +205,7 @@ p{
     .drop-ctn li{
         cursor: pointer;
         list-style: none;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     }
     .navigasjon{
      display: flex;
@@ -213,9 +217,16 @@ p{
     #dropdown{
         display: none;
         position: absolute;
-        width
+        width:100%;
+        z-index: 1;
+        text-align: center;
+        left: 0;
+        top:100%;
     }
     #dropdown.active {
         display:block;
+    }
+    #dropdown li{
+        padding: 10px 15px;
     }
 }
