@@ -11,7 +11,7 @@ html{
     display: grid;
     justify-content: center;
     font-size: 50px;
-    color: #0099ff;
+    color: yellow;
     padding: 20px;
 }
 body{
@@ -127,7 +127,7 @@ ul{
         display: grid;
         justify-content: center;
         font-size: 45px;
-        color: #ffe600;
+        color: blue;
         padding: 20px;
     }
 
