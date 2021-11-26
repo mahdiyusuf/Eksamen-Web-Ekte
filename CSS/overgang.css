@@ -2,6 +2,9 @@
     box-sizing: border-box;
 
 }
+html{
+    font-family: sans-serif;
+}
 .title{
     display: grid;
     margin: 0px auto;
@@ -31,10 +34,6 @@ header{
 h1{
     font-weight: bold;
 }
-h2{
-    padding-top: 20px;
-    justify-content: center;
-}
 
 nav{
 
@@ -42,46 +41,46 @@ nav{
     background-color: rgb(0, 0, 0);
     z-index: 5;
     width: 100%;
-    padding:1rem;
+    padding: 1rem;
     
     
 }
 li a{
-    display:inblock;
+    display:inline-block;
     padding: 0.5em;
     text-decoration: none;
     color: rgb(255, 255, 255);
     transition: transform .2s;
 }
 
+
 #logo{
     width: 70px;
     height: 40px;
+    margin: 0 auto ;
 }
 
 li a:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
   }
 
-  ul{
+
+ul{
     list-style-type: none;
     margin: 0px auto;
-    display: inline-flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    font-size: 26px;
+  font-size: 26px;
     flex-grow: 1;
 }
-
 .bilde{
     display: grid;
-    height: 240px;
-    width: 400px;
+    width: 85%;
     border-radius: 10%;
     border: 2px solid white;
+    margin: 0 auto;
 }
-
 .bildetekst{
     display: grid;
     max-width: 65ch;
@@ -95,7 +94,7 @@ li a:hover {
 .flex-container{
     background-color: black;
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 100%;
     place-items: center, top;
     margin-top: 440px;
     margin-left: -10px;
@@ -118,20 +117,18 @@ li a:hover {
 }
 
 .tekst{
-    display: grid;
     margin: 0px auto;
     padding: 60px;
     max-width: 1100px;
     text-align: center;
     display: grid;
+    grid-template-columns: 100%;
     background-color:rgba(255, 255, 255, 0.8);
     margin-top: 200px;
     margin-bottom: 200px;
-    grid-template-columns: 1fr;
-    grid-template-columns: 50% 50%;
-    grid-area: "title title title title....";
     place-items: center, center;
-    grid-gap: 20px;
+
+ 
 }
 h2{
     display: grid;
@@ -150,10 +147,43 @@ p{
 }
 #elev{
     margin-top: 40px;
-    margin-left: 25px;
     display: grid;
     width: 400px;
     height: 250px;
     border: 2px solid;
     border-radius: 10px;
+    align-items: center;
+}
+.menu{
+    width: 3rem;
+    margin: 0 auto;
+    margin-left: 70%;
+    width: 50px;
+    position: fixed;
+    transition: all 0.2s, ease;
+}
+.menu li:hover{
+    cursor: pointer;
+    background-color: black; 
+}
+
+
+@media screen and (min-width: 800px){
+    .tekst{
+       display: grid;
+       grid-template-columns: 50% 50%;
+    }
+  
+    .bilde{
+        width: 100%;
+        margin:0px auto;
+    }   
+    #elev{
+        margin-left: 7%;
+    }
+   
+    ul{
+        display: inline-flex;
+    }
+
 }
